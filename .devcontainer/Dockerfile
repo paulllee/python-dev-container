@@ -2,6 +2,14 @@ FROM python:latest
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
+# dev container necessities
+RUN python3 -m pip install -U pylint
+
+# other important packages
+RUN python3 -m pip install -U packaging
+RUN python3 -m pip install -U requests
+
+# the machine learning dependencies
 RUN python3 -m pip install -U numpy
 RUN python3 -m pip install -U Pillow
 RUN python3 -m pip install -U matplotlib
