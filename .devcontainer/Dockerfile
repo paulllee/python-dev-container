@@ -4,6 +4,8 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # dev container necessities
 RUN python3 -m pip install -U pylint
+RUN python3 -m pip install -U pycodestyle
+RUN python3 -m pip install -U pydocstyle
 
 # other important packages
 RUN python3 -m pip install -U packaging
