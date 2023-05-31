@@ -23,7 +23,8 @@
 				"njpwerner.autodocstring",
 				"kevinrose.vsc-python-indent",
 				"mhutchie.git-graph", 
-				"waderyan.gitblame"
+				"waderyan.gitblame",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
